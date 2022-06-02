@@ -1,39 +1,68 @@
 import React from "react";
+import SimpleCalc from "./SimpleCalc";
 
 function Main() {
-
-  const projectDivs = [
+  const buttons = [
     {
-      name: "simpleCalc"
-
+      symbol: 1,
     },
     {
-      name: "stopwatch"
-
-    },  
-  ]
-
+      symbol: 2,
+    },
+    {
+      symbol: 3,
+    },
+    {
+      symbol: "+",
+    },
+    {
+      symbol: 4,
+    },
+    {
+      symbol: 5,
+    },
+    {
+      symbol: 6,
+    },
+    {
+      symbol: "-",
+    },
+    {
+      symbol: 7,
+    },
+    {
+      symbol: 8,
+    },
+    {
+      symbol: 9,
+    },
+    {
+      symbol: "*",
+    },
+    {
+      symbol: "C",
+    },
+    {
+      symbol: 0,
+    },
+    {
+      symbol: "=",
+    },
+    {
+      symbol: "/",
+    },
+  ];
 
   return (
-    <div className="bg-[#1A1A1A] h-screen min-w-full flex justify-center items-center">
+    <>
+      <div className="bg-slate-700 h-screen w-full flex justify-center items-center px-8">
+        <div className="flex flex-col lg:flex-row w-full gap-8 justify-center items-center">
+            <SimpleCalc />
 
-
-
-
-      <div className="h-3/4 w-1/2 bg-[#2A2A2A] border-2 border-red-500 sm:flex justify-center items-center gap-8 px-8">
-
-
-
-    <div className="h-1/2 w-1/2 bg-[#1A1A1A] flex justify-center items-center rounded-md">hi</div>
-    <div className="h-1/2 w-1/2 bg-[#1A1A1A] flex justify-center items-center rounded-md">hi</div>
-
-
+          <div className="bg-slate-600 h-[316px] w-full flex max-w-md rounded-md shadow-md"></div>
+        </div>
       </div>
-
-
-
-
-    </div>
+    </>
   );
 }
 
