@@ -57,7 +57,7 @@ function Main() {
     <>
       <div className="bg-slate-700 h-screen w-full flex justify-center items-center px-8">
         <div className="flex flex-col lg:flex-row w-full gap-8 justify-center items-center">
-            <SimpleCalc />
+            <SimpleCalc /> 
 
           <div className="bg-slate-600 h-[316px] w-full flex max-w-md rounded-md shadow-md"></div>
         </div>
